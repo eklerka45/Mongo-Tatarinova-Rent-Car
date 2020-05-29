@@ -1,0 +1,14 @@
+db.cars.insertMany([
+    {name: "car1", year: "2015", race: 45645, state: "old", price: "12"},
+    {name: "car2", year: "2014", race: 56755, state: "old", price: "15"},
+    {name: "car3", year: "2012", race: 67867, state: "old", price: "17"},
+    {name: "car4", year: "2012", race: 90076, state: "old", price: "14"},
+    {name: "car5", year: "2014", race: 23423, state: "old", price: "19"},
+    {name: "car6", year: "2020", race: 1000, state: "new", price: "25"},
+ ]);
+
+db.rent.insertMany([
+    {dateStart: new Date("2020-04-11"), dateEnd: new Date("2020-05-11"), cost: "325325", car: "car1"},
+    {dateStart: new Date("2020-04-14"), dateEnd: new Date("2020-04-22"), cost: "325325", car: "car4"},
+    {dateStart: new Date("2020-04-15"), dateEnd: new Date("2020-04-30"), cost: "325325", car: "car5"},
+]);

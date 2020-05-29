@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="rent-profit">
+        <p>Полученный доход с проката по состоянию на выбранную дату:</p>
+        <div class="price"></div>
+        <select class="cars">
+            <option>car1</option>
+            <option>car2</option>
+            <option>car3</option>
+            <option>car4</option>
+            <option>car5</option>
+            <option>car6</option>
+        </select>
+        <input type="date" class="start-date" value="2020-04-11" min="2020-04-11" max="2021-01-01">
+        <input type="date" class="end-date" value="2020-04-18" min="2020-04-11" max="2021-01-01">
+        <button onclick="getPrice()">get</button>
+    </div>
+    <hr>
+    <div class="vendors-cars">
+        <p>Автомобили с пробегом меньше указанного:</p>
+
+        <input type="text" class="race" value="45000">
+        <button onclick="getCars()">get</button>
+    </div>
+    <table class="table-race-cars" border="1" style="border-collapse: collapse;"></table>
+
+    <hr>
+    <div class="date-car">
+        <p>Имеющиеся в данном пункте марки автомобилей:</p>
+        <select class="car-input">
+            <option>car1</option>
+            <option>car2</option>
+            <option>car3</option>
+            <option>car4</option>
+            <option>car5</option>
+            <option>car6</option>
+        </select>
+        <button onclick="getFreeCars()">get</button>
+    </div>
+    <table class="table-car" border="1" style="border-collapse: collapse;"></table>
+    <style> th, td { padding: 5px 10px; } p, h2 {margin: 5px 0;} </style>
+    <script src="ajax-laba2/index.js"></script>
+</body>
+</html>
